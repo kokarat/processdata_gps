@@ -21,9 +21,16 @@ $ mocha test
 ผลการรันจะเป็นดังนี้
 
   Get_Imei
+
     #tk103()
+
       ✓ insert gps data shot message should return 359710042160508
+
       ✓ insert gps data long message should return 359710042160508
+
     #avl05
+
       ✓ have error should Exeption error
+
       ✓ insert gps data should return 863771022576278
+      
