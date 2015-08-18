@@ -20,54 +20,50 @@ $ mocha test
 
 ผลการรันจะเป็นดังนี้
 
-   Get_serail
+	Get_serail
 
-    #vt300
+	#vt300
 
-      ✓ insert gps data should return serail 45133420034
+	  ✓ insert gps data should return serail 45133420034
 
-  Get_Imei
+	Get_Imei
 
-    #tk103()
+	#tk103()
 
-      ✓ insert gps data shot message should return 359710042160508
+	  ✓ insert gps data shot message should return 359710042160508
 
-      ✓ insert gps data long message should return 359710042160508
+	  ✓ insert gps data long message should return 359710042160508
 
-    #avl05
+	#avl05
 
-      ✓ have error should Exeption error
+	  ✓ have error should Exeption error
 
-      ✓ insert gps data should return 863771022576278
+	  ✓ insert gps data should return 863771022576278
 
+	Get_Latitude
 
-  Get_Latitude
+	#tk103()
 
-    #tk103()
+	  ✓ insert gps data shot message should return error message
 
-      ✓ insert gps data shot message should return error message
+	  ✓ insert gps data long message should return 13.979505
 
-      ✓ insert gps data long message should return 13.979505
+	#avl05
 
-    #avl05
+	  ✓ have error should Exeption error message
 
-      ✓ have error should Exeption error message
+	  ✓ insert gps data should return 14.945580
 
-      ✓ insert gps data should return 14.945580
+	Get_Longtitude
 
+	#tk103()
 
-  Get_Longtitude
+	  ✓ insert gps data shot message should return error message 101.756725
 
-    #tk103()
+	  ✓ insert gps data long message should return 101.756725
 
-      ✓ insert gps data shot message should return error message 101.756725
+	#avl05
 
-      ✓ insert gps data long message should return 101.756725
+	  ✓ have error should Exeption error message 102.166418
 
-    #avl05
-
-      ✓ have error should Exeption error message 102.166418
-      
-      ✓ insert gps data should return 102.166418
-
-      
+	  ✓ insert gps data should return 102.166418
