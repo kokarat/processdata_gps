@@ -63,4 +63,18 @@ describe('Get_Imei', function() {
 			done();
 		})
 	})
+
+	describe('#vt300', function(){
+		it('insert gps data should return 861074021217651', 
+		function(done) {
+			data_for_send = "$$^@NE^S4 ^CO��^A45133420034,"+
+							"861074021217651,GPS Tracker VT300i_EV335_20130708��"
+
+			process_gps_data.getImie(data_for_send, function(answer){
+				expect("861074021217651").to.equal(answer)
+			})
+			
+			done();
+		})
+	})
 })

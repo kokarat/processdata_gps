@@ -8,13 +8,16 @@ exports.getImie = function(data ,callback){
 
 			var position_of_array_imie = 1
 
-			var imei = array_imei[position_of_array_imie]
+			var imei_tk103 = array_imei[position_of_array_imie]
 
-			return callback(imei)
+			return callback(imei_tk103)
 		}
-
-		var Imei = data.substring(4,19)
-		return callback(Imei)	
+		if(data.indexOf("VT300") > -1){
+			var imie_vt300 = data.match("\\d{15}")[0];
+			return callback(imie_vt300)
+		}
+		var Imei_avl05 = data.substring(4,19)
+		return callback(Imei_avl05)	
 	}
 
 	catch (ex) {
@@ -51,8 +54,6 @@ exports.getLongtitude = function(data, callback){
 		var Longtitude = data.match("(\\d+)(\\d{2}\\.\\d+),"+"([EW])?,");
 
 		var DegreeLongtitude = (parseFloat(Longtitude[1]) + (parseFloat(Longtitude[2]) / 60)).toFixed(6);
-
-		console.log(DegreeLongtitude)
 
 		return callback(DegreeLongtitude)	
 	}
