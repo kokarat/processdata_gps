@@ -79,7 +79,7 @@ Get_Longtitude
 
 	  ✓ insert gps data should return 102.166418
 
-#vt300
+	#vt300
 
       ✓ insert gps data should return 102.166410
 
