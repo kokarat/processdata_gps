@@ -20,13 +20,15 @@ $ mocha test
 
 ผลการรันจะเป็นดังนี้
 
-	Get_serail
+มีทั้งหมด 13 test case
+
+Get_serail
 
 	#vt300
 
 	  ✓ insert gps data should return serail 45133420034
 
-	Get_Imei
+Get_Imei
 
 	#tk103()
 
@@ -40,7 +42,11 @@ $ mocha test
 
 	  ✓ insert gps data should return 863771022576278
 
-	Get_Latitude
+	#vt300
+
+    ✓ insert gps data should return 861074021217651
+
+Get_Latitude
 
 	#tk103()
 
@@ -54,7 +60,7 @@ $ mocha test
 
 	  ✓ insert gps data should return 14.945580
 
-	Get_Longtitude
+Get_Longtitude
 
 	#tk103()
 
