@@ -63,4 +63,33 @@ describe('Get_Latitude', function() {
 			done();
 		})
 	})
+
+	describe('#vt300', function(){
+		it('insert gps data should return 14.945535', 
+		function(done) {
+
+			data_for_send = "$$^@^?E^S4 ^CO��U091628.000,A,1456.7321,N,"+
+							"10209.9846,E,0.00,252,150815,,*06|0.8|181|"+
+							"2000|0123,0134|020800013BCD302F|14|017F301E1~"
+
+			process_gps_data.getLatitude(data_for_send, function(answer){
+				expect("14.945535").to.equal(answer)
+			})
+
+			done();
+		})
+
+		it('have error should Exeption error message', 
+		function(done) {
+
+			data_for_send = "$$^@NE^S4 ^CO��^A45133420034,"+
+							"861074021217651,GPS Tracker VT300i_EV335_20130708��"
+
+			process_gps_data.getLatitude(data_for_send, function(answer){
+				expect("Error->process_gps_data->getLatitude").to.equal(answer)
+			})
+
+			done();
+		})
+	})
 })

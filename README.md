@@ -20,7 +20,7 @@ $ mocha test
 
 ผลการรันจะเป็นดังนี้
 
-มีทั้งหมด 13 test case
+มีทั้งหมด 17 test case
 
 Get_serail
 
@@ -60,6 +60,11 @@ Get_Latitude
 
 	  ✓ insert gps data should return 14.945580
 
+	#vt300
+   	  ✓ insert gps data should return 14.945535
+
+      ✓ have error should Exeption error message
+
 Get_Longtitude
 
 	#tk103()
@@ -73,3 +78,9 @@ Get_Longtitude
 	  ✓ have error should Exeption error message 102.166418
 
 	  ✓ insert gps data should return 102.166418
+
+#vt300
+
+      ✓ insert gps data should return 102.166410
+
+      ✓ have error should Exeption error message
