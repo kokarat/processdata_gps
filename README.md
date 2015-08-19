@@ -22,12 +22,6 @@ $ mocha test
 
 มีทั้งหมด 17 test case
 
-Get_serail
-
-	#vt300
-
-	  ✓ insert gps data should return serail 45133420034
-
 Get_Imei
 
 	#tk103()
